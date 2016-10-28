@@ -11,7 +11,7 @@
   font-weight: normal;
 }
 html.page-home {
-  position: absolute;
+/*  position: absolute;
   top: 0;
   left: 0;
   right: 0;
@@ -20,7 +20,7 @@ html.page-home {
   background-color: transparent;
   background-size: cover;
   background-position: center center;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat;*/
   /*background-image: url(&apos;/images/bg.jpg&apos;)*/
 
   /*background: linear-gradient( #1abc9c, transparent), linear-gradient( 90deg, skyblue, transparent), linear-gradient( -90deg, coral, transparent);*/
