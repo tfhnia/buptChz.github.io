@@ -7,24 +7,27 @@
 <head>
   <meta charset="utf-8">
   
-  <title>恋爱的犀牛 | 笑不忘书</title>
+  <title>JS入门 | 笑不忘书</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   
-    <meta name="keywords" content="感情," />
+    <meta name="keywords" content="技术,JavaScript,教程," />
   
 
-  <meta name="description" content="恋爱的犀牛">
+  <meta name="description" content="一直没有系统化的学习一下原生Js，作为一个入门级前端攻城狮，不懂JavaScript实在太说不过去了。这篇教程作为入门的知识点整理，也作为以后复习的参考资料吧">
 <meta property="og:type" content="article">
-<meta property="og:title" content="恋爱的犀牛">
-<meta property="og:url" content="http://www.mybjut.cn/2016/10/28/恋爱的犀牛/index.html">
+<meta property="og:title" content="JS入门">
+<meta property="og:url" content="http://www.mybjut.cn/2016/10/29/JS入门/index.html">
 <meta property="og:site_name" content="笑不忘书">
-<meta property="og:description" content="恋爱的犀牛">
-<meta property="og:updated_time" content="2016-10-28T15:21:37.746Z">
+<meta property="og:description" content="一直没有系统化的学习一下原生Js，作为一个入门级前端攻城狮，不懂JavaScript实在太说不过去了。这篇教程作为入门的知识点整理，也作为以后复习的参考资料吧">
+<meta property="og:image" content="http://www.mybjut.cn/2016/10/29/JS入门/dom.jpg">
+<meta property="og:image" content="http://www.mybjut.cn/2016/10/29/JS入门/js语法.jpg">
+<meta property="og:updated_time" content="2016-10-29T15:13:07.886Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="恋爱的犀牛">
-<meta name="twitter:description" content="恋爱的犀牛">
+<meta name="twitter:title" content="JS入门">
+<meta name="twitter:description" content="一直没有系统化的学习一下原生Js，作为一个入门级前端攻城狮，不懂JavaScript实在太说不过去了。这篇教程作为入门的知识点整理，也作为以后复习的参考资料吧">
+<meta name="twitter:image" content="http://www.mybjut.cn/2016/10/29/JS入门/dom.jpg">
 
   
 
@@ -135,17 +138,22 @@
 </div>
 
 
+  <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#常用Js语法入手教程"><span class="toc-text">常用Js语法入手教程</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#基本的语法"><span class="toc-text">基本的语法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#面向对象的JavaScript"><span class="toc-text">面向对象的JavaScript</span></a></li></ol></li></ol>
+  </div>
+
 
 
 <div class="content content-post CENTER">
-   <article id="post-恋爱的犀牛" class="article article-type-post" itemprop="blogPost">
+   <article id="post-JS入门" class="article article-type-post" itemprop="blogPost">
   <header class="article-header">
-    <h1 class="post-title">恋爱的犀牛</h1>
+    <h1 class="post-title">JS入门</h1>
 
     <div class="article-meta">
       <span>
         <i class="icon-calendar"></i>
-        <span>2016.10.28</span>
+        <span>2016.10.29</span>
       </span>
 
       
@@ -158,7 +166,7 @@
       
   <span class="article-category">
     <i class="icon-list"></i>
-    <a class="article-category-link" href="/categories/随笔/">随笔</a> / <a class="article-category-link" href="/categories/随笔/todo/">todo</a>
+    <a class="article-category-link" href="/categories/技术/">技术</a>
   </span>
 
 
@@ -166,7 +174,7 @@
       
         <span>
           <i class="icon-comment"></i>
-          <a href="http://www.mybjut.cn/2016/10/28/恋爱的犀牛/#disqus_thread"></a>
+          <a href="http://www.mybjut.cn/2016/10/29/JS入门/#disqus_thread"></a>
         </span>
       
 
@@ -175,7 +183,13 @@
 
   <div class="article-content">
     
-      
+      <h1 id="&#x5E38;&#x7528;Js&#x8BED;&#x6CD5;&#x5165;&#x624B;&#x6559;&#x7A0B;"><a href="#&#x5E38;&#x7528;Js&#x8BED;&#x6CD5;&#x5165;&#x624B;&#x6559;&#x7A0B;" class="headerlink" title="&#x5E38;&#x7528;Js&#x8BED;&#x6CD5;&#x5165;&#x624B;&#x6559;&#x7A0B;"></a>&#x5E38;&#x7528;Js&#x8BED;&#x6CD5;&#x5165;&#x624B;&#x6559;&#x7A0B;</h1><h2 id="&#x57FA;&#x672C;&#x7684;&#x8BED;&#x6CD5;"><a href="#&#x57FA;&#x672C;&#x7684;&#x8BED;&#x6CD5;" class="headerlink" title="&#x57FA;&#x672C;&#x7684;&#x8BED;&#x6CD5;"></a>&#x57FA;&#x672C;&#x7684;&#x8BED;&#x6CD5;</h2><hr>
+<p>&#x6709;&#x4E00;&#x5B9A;&#x7684;&#x7F16;&#x7A0B;&#x57FA;&#x7840;&#xFF0C;&#x719F;&#x77E5;&#x67D0;&#x7F16;&#x7A0B;&#x8BED;&#x8A00;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#x518D;&#x53BB;&#x5B66;&#x4E60;&#x65B0;&#x7684;&#x7F16;&#x7A0B;&#x8BED;&#x8A00;&#xFF0C;&#x4E00;&#x822C;&#x90FD;&#x4F1A;&#x6BD4;&#x8F83;&#x987A;&#x5229;&#x548C;&#x8F7B;&#x677E;&#x7684;&#x3002;<br>JavaScript&#x4F5C;&#x4E3A;&#x4E00;&#x4E2A;&#x5F88;&#x70ED;&#x95E8;&#x7684;&#x7F16;&#x7A0B;&#x8BED;&#x8A00;&#xFF0C;&#x5BF9;&#x5176;&#x6709;&#x4E00;&#x5B9A;&#x7684;&#x638C;&#x63E1;&#x8FD8;&#x662F;&#x6709;&#x76CA;&#x4E8E;&#x7A0B;&#x5E8F;&#x733F;&#x7684;&#x804C;&#x4E1A;&#x751F;&#x6DAF;&#x7684;&#x3002;<br>&#x901A;&#x5E38;&#x6765;&#x8BF4;&#xFF0C;Js&#x7684;&#x8BED;&#x6CD5;&#x53EF;&#x4EE5;&#x5206;&#x4E3A;&#x4EE5;&#x4E0B;&#x51E0;&#x4E2A;&#x6A21;&#x5757;&#x6765;&#x5B66;&#x4E60;&#xFF1A;<br><img src="/2016/10/29/JS&#x5165;&#x95E8;/dom.jpg" alt="Js&#x8BED;&#x6CD5;"></p>
+<hr>
+<p>&#x5B66;&#x4E60;Js&#xFF0C;&#x4E3B;&#x8981;&#x662F;&#x7528;&#x6765;&#x5BF9;&#x7F51;&#x9875;&#x7684;&#x5143;&#x7D20;&#x8FDB;&#x884C;&#x64CD;&#x4F5C;&#x3002;<strong>JavaScript&#x5F25;&#x8865;&#x4E86;HTML&#x548C;CSS&#x5728;&#x8FD0;&#x7B97;&#x80FD;&#x529B;&#x4E0A;&#x7684;&#x7F3A;&#x9677;&#x3002;</strong>&#x56E0;&#x6B64;&#xFF0C;&#x719F;&#x77E5;Js&#x7684;&#x8FD0;&#x7B97;&#x64CD;&#x4F5C;&#x4EE5;&#x53CA;DOM&#x64CD;&#x4F5C;&#x662F;&#x6700;&#x91CD;&#x8981;&#x7684;&#x3002;<br>&#x4E3B;&#x8981;&#x7684;DOM&#x64CD;&#x4F5C;&#x6709;&#x4EE5;&#x4E0B;&#xFF1A;<br><img src="/2016/10/29/JS&#x5165;&#x95E8;/js&#x8BED;&#x6CD5;.jpg" alt="DOM&#x64CD;&#x4F5C;"></p>
+<h2 id="&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7684;JavaScript"><a href="#&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7684;JavaScript" class="headerlink" title="&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7684;JavaScript"></a>&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7684;JavaScript</h2><hr>
+<p>&#x5F85;&#x6574;&#x7406;</p>
+
     
   </div>
 </article>
@@ -309,7 +323,7 @@
   <script>
     var disqus_shortname = 'forsigner';
     
-    var disqus_url = 'http://www.mybjut.cn/2016/10/28/恋爱的犀牛/';
+    var disqus_url = 'http://www.mybjut.cn/2016/10/29/JS入门/';
     
     (function(){
       var dsq = document.createElement('script');
