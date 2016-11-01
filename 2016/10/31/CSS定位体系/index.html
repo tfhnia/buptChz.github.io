@@ -21,7 +21,7 @@
 <meta property="og:url" content="http://www.mybjut.cn/2016/10/31/CSS定位体系/index.html">
 <meta property="og:site_name" content="笑不忘书">
 <meta property="og:description" content="一直没有理清楚前端中关于CSS定位体系的概念，现在借这篇博文自己整理一下，整理自[CSS定位体系概述](http://www.w3help.org/zh-cn/kb/009/)">
-<meta property="og:updated_time" content="2016-10-31T13:29:27.220Z">
+<meta property="og:updated_time" content="2016-11-01T13:45:21.854Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CSS定位体系">
 <meta name="twitter:description" content="一直没有理清楚前端中关于CSS定位体系的概念，现在借这篇博文自己整理一下，整理自[CSS定位体系概述](http://www.w3help.org/zh-cn/kb/009/)">
@@ -135,6 +135,11 @@
 </div>
 
 
+  <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#CSS归纳整理"><span class="toc-text">CSS归纳整理</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#概述"><span class="toc-text">概述</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CSS盒子模型"><span class="toc-text">CSS盒子模型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CSS定位体系"><span class="toc-text">CSS定位体系</span></a></li></ol></li></ol>
+  </div>
+
 
 
 <div class="content content-post CENTER">
@@ -175,7 +180,17 @@
 
   <div class="article-content">
     
-      
+      <h1 id="CSS&#x5F52;&#x7EB3;&#x6574;&#x7406;"><a href="#CSS&#x5F52;&#x7EB3;&#x6574;&#x7406;" class="headerlink" title="CSS&#x5F52;&#x7EB3;&#x6574;&#x7406;"></a>CSS&#x5F52;&#x7EB3;&#x6574;&#x7406;</h1><p>&#x4E00;&#x76F4;&#x60F3;&#x627E;&#x4E2A;&#x65F6;&#x95F4;&#x5C06;CSS&#x7684;&#x77E5;&#x8BC6;&#x70B9;&#x7406;&#x4E00;&#x4E0B;&#xFF0C;&#x501F;&#x8FD9;&#x6B21;&#x642D;&#x5EFA;&#x672A;&#x98CE;&#x5B98;&#x7F51;&#x7684;&#x4E3B;&#x9875;&#x7684;&#x673A;&#x4F1A;&#xFF0C;&#x91CD;&#x65B0;&#x5BF9;CSS&#x7684;&#x77E5;&#x8BC6;&#x4F53;&#x7CFB;&#x8FDB;&#x884C;&#x68B3;&#x7406;&#x4E00;&#x4E0B;&#x3002;</p>
+<h2 id="&#x6982;&#x8FF0;"><a href="#&#x6982;&#x8FF0;" class="headerlink" title="&#x6982;&#x8FF0;"></a>&#x6982;&#x8FF0;</h2><p>&#x3000;&#x3000;&#x5E94;&#x7528;CSS&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x6392;&#x7248;&#x7F51;&#x9875;&#xFF0C;&#x4F7F;&#x4E4B;&#x8868;&#x73B0;&#x51FA;&#x6211;&#x4EEC;&#x6240;&#x671F;&#x5F85;&#x7684;&#x6837;&#x5F0F;&#x3002;&#x8FD0;&#x7528;CSS&#xFF0C;&#x9996;&#x5148;&#x5E94;&#x8BE5;&#x5BF9;&#x8FD9;&#x4E00;&#x4E2A;&#x8BA1;&#x7B97;&#x673A;&#x8BED;&#x8A00;&#x7684;&#x4F53;&#x7CFB;&#x6709;&#x4E00;&#x5B9A;&#x7684;&#x4E86;&#x89E3;&#x3002;&#x6211;&#x5E76;&#x975E;&#x662F;&#x4E13;&#x6CE8;&#x4E8E;&#x524D;&#x7AEF;&#x5F00;&#x53D1;&#x7684;&#x7A0B;&#x5E8F;&#x733F;&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x5BF9;&#x8FD9;&#x4E00;&#x4F53;&#x7CFB;&#x7684;&#x7406;&#x89E3;&#x4E5F;&#x5B9E;&#x4E3A;&#x7C97;&#x6D45;&#xFF0C;&#x4EC5;&#x4EC5;&#x505C;&#x7559;&#x5728;<strong>&#x521A;&#x521A;&#x591F;&#x7528;</strong>&#x7684;&#x5730;&#x6B65;&#x4F5C;&#x4E3A;&#x4E00;&#x540D;&#x4E1A;&#x4F59;&#x7684;&#x7801;&#x519C;&#xFF0C;&#x5728;&#x524D;&#x7AEF;&#x65B9;&#x9762;&#x5176;&#x5B9E;&#x4E5F;&#x4E0D;&#x5FC5;&#x6DF1;&#x7A76;&#xFF0C;&#x524D;&#x7AEF;&#x5751;&#x592A;&#x5927;&#xFF0C;&#x9700;&#x8981;&#x82B1;&#x5927;&#x91CF;&#x65F6;&#x95F4;&#x7CBE;&#x529B;&#x53BB;&#x586B;&#xFF0C;&#x4E0D;&#x662F;&#x672C;&#x804C;&#x5DE5;&#x4F5C;&#x7684;&#x8BDD;&#xFF0C;&#x4E0D;&#x592A;&#x503C;&#x3002;&#x672C;&#x6587;&#x4EC5;&#x4EC5;&#x662F;&#x6574;&#x7406;&#x4E00;&#x4E9B;&#x77E5;&#x8BC6;&#x70B9;&#xFF0C;&#x5982;&#x679C;&#x771F;&#x5FC3;&#x60F3;&#x6DF1;&#x7A76;&#x524D;&#x7AEF;&#x5F00;&#x53D1;&#x7684;&#x8BFB;&#x8005;&#xFF0C;&#x6587;&#x7AE0;&#x968F;&#x4FBF;&#x770B;&#x770B;&#x5C31;&#x597D;&#xFF0C;&#x5927;&#x725B;&#x8F7B;&#x62CD;&#x3002;<br>&#x3000;&#x3000;<br><strong>&#x521A;&#x521A;&#x591F;&#x7528;</strong>&#xFF0C;&#x9996;&#x5148;&#x5E94;&#x8BE5;&#x5BF9;CSS&#x4E2D;&#x7684;&#x4E09;&#x4E2A;&#x6A21;&#x5757;&#x6709;&#x6240;&#x7406;&#x89E3;&#xFF1A;</p>
+<blockquote>
+<ol>
+<li>CSS&#x7684;&#x76D2;&#x5B50;&#x6A21;&#x578B;</li>
+<li>CSS&#x7684;&#x5B9A;&#x4F4D;&#x4F53;&#x7CFB;</li>
+<li>CSS&#x7684;&#x5E03;&#x5C40;&#x6A21;&#x578B;</li>
+</ol>
+</blockquote>
+<h2 id="CSS&#x76D2;&#x5B50;&#x6A21;&#x578B;"><a href="#CSS&#x76D2;&#x5B50;&#x6A21;&#x578B;" class="headerlink" title="CSS&#x76D2;&#x5B50;&#x6A21;&#x578B;"></a>CSS&#x76D2;&#x5B50;&#x6A21;&#x578B;</h2><p><em>&#x672C;&#x8282;&#x4E0D;&#x518D;&#x8D58;&#x8FF0;</em></p>
+<h2 id="CSS&#x5B9A;&#x4F4D;&#x4F53;&#x7CFB;"><a href="#CSS&#x5B9A;&#x4F4D;&#x4F53;&#x7CFB;" class="headerlink" title="CSS&#x5B9A;&#x4F4D;&#x4F53;&#x7CFB;"></a>CSS&#x5B9A;&#x4F4D;&#x4F53;&#x7CFB;</h2>
     
   </div>
 </article>
