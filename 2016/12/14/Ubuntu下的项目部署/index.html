@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 
 
-  <html class="light page-archives2016">
+  <html class="light page-post">
 
 
 <head>
   <meta charset="utf-8">
   
-  <title>Archives: 2016 | 笑不忘书</title>
+  <title>Ubuntu下的项目部署 | 笑不忘书</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -15,12 +15,19 @@
     <meta name="keywords" content="前端,设计,Hexo主题,前端开发,用户体验,设计,frontend,design,Python,PHP" />
   
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="笑不忘书">
-<meta property="og:url" content="http://www.mybjut.cn/archives/2016/index.html">
+  <meta name="description" content="&amp;#x4E0B;&amp;#x8F7D;LNMP&amp;#x4E00;&amp;#x952E;&amp;#x5B89;&amp;#x88C5;&amp;#x5305;[https://lnmp.org/]
+&amp;#x6839;&amp;#x636E;&amp;#x6559;&amp;#x7A0B;[https://lnmp.org/install.html]&amp;#x5B89;&amp;#x88C5;&amp;#x597D;&amp;#x73AF;&amp;#x5883; &amp;#x5B89;&amp;#x88C5">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Ubuntu下的项目部署">
+<meta property="og:url" content="http://www.mybjut.cn/2016/12/14/Ubuntu下的项目部署/index.html">
 <meta property="og:site_name" content="笑不忘书">
+<meta property="og:description" content="&amp;#x4E0B;&amp;#x8F7D;LNMP&amp;#x4E00;&amp;#x952E;&amp;#x5B89;&amp;#x88C5;&amp;#x5305;[https://lnmp.org/]
+&amp;#x6839;&amp;#x636E;&amp;#x6559;&amp;#x7A0B;[https://lnmp.org/install.html]&amp;#x5B89;&amp;#x88C5;&amp;#x597D;&amp;#x73AF;&amp;#x5883; &amp;#x5B89;&amp;#x88C5">
+<meta property="og:updated_time" content="2016-12-14T15:05:10.909Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="笑不忘书">
+<meta name="twitter:title" content="Ubuntu下的项目部署">
+<meta name="twitter:description" content="&amp;#x4E0B;&amp;#x8F7D;LNMP&amp;#x4E00;&amp;#x952E;&amp;#x5B89;&amp;#x88C5;&amp;#x5305;[https://lnmp.org/]
+&amp;#x6839;&amp;#x636E;&amp;#x6559;&amp;#x7A0B;[https://lnmp.org/install.html]&amp;#x5B89;&amp;#x88C5;&amp;#x597D;&amp;#x73AF;&amp;#x5883; &amp;#x5B89;&amp;#x88C5">
 
   
 
@@ -48,17 +55,8 @@
     <span id="toolbox-mobile" class="toolbox-mobile">潘多拉</span>
   
 
-  <div class="content content-archive">
-  <div class="page-header">
-
-  
-    <div class="breadcrumb">
-      <div class="location">博客</div>
-      <i class="icon-location"></i>
-    </div>
-  
-
-  
+  <div class="post-header CENTER">
+   
   <div class="toolbox">
     <a class="toolbox-entry" href="/">
       <span class="toolbox-entry-text">潘多拉</span>
@@ -137,133 +135,86 @@
   </div>
 
 
+</div>
 
-  <div class="box-blog-info">
-    <a class="avatar" href="/">
-      <img src="/images/avatar.jpg" alt="" />
-    </a>
-    <div class="info">
-      <h3 class="name" style="font-family: calligraffittiregular">
-        tfhnia
-      </h3>
-      <div class="slogan">
-        永言配命
+
+
+
+<div class="content content-post CENTER">
+   <article id="post-Ubuntu下的项目部署" class="article article-type-post" itemprop="blogPost">
+  <header class="article-header">
+    <h1 class="post-title">Ubuntu下的项目部署</h1>
+
+    <div class="article-meta">
+      <span>
+        <i class="icon-calendar"></i>
+        <span>2016.12.14</span>
+      </span>
+
+      
+        <span class="article-author">
+          <i class="icon-user"></i>
+          <span>Chen</span>
+        </span>
+      
+
+      
+
+
+      
+        <span>
+          <i class="icon-comment"></i>
+          <a href="http://www.mybjut.cn/2016/12/14/Ubuntu下的项目部署/#disqus_thread"></a>
+        </span>
+      
+
+    </div>
+  </header>
+
+  <div class="article-content">
+    
+      <ol>
+<li>&#x4E0B;&#x8F7D;LNMP&#x4E00;&#x952E;&#x5B89;&#x88C5;&#x5305;[<a href="https://lnmp.org/" target="_blank" rel="external">https://lnmp.org/</a>]</li>
+<li>&#x6839;&#x636E;&#x6559;&#x7A0B;[<a href="https://lnmp.org/install.html]&#x5B89;&#x88C5;&#x597D;&#x73AF;&#x5883;" target="_blank" rel="external">https://lnmp.org/install.html]&#x5B89;&#x88C5;&#x597D;&#x73AF;&#x5883;</a><br> &#x5B89;&#x88C5;&#x65F6;&#x6CE8;&#x610F;&#xFF0C;PHP&#x9009;&#x62E9;5.6&#x7248;&#x672C;&#xFF0C;MySQL&#x9009;&#x62E9;&#x9ED8;&#x8BA4;&#xFF0C;InnoDB&#x5F15;&#x64CE;&#x5F00;&#x542F;&#xFF0C;PHP&#x4F18;&#x5316;&#x4E0D;&#x8FDB;&#x884C;</li>
+<li><p>&#x8FDB;&#x5165;{/home/wwwroot}&#xFF0C;&#x8FD9;&#x91CC;&#x662F;Nginx&#x7684;&#x9ED8;&#x8BA4;&#x9879;&#x76EE;&#x8DEF;&#x5F84;</p>
+</li>
+<li><p><a href="https://segmentfault.com/a/1190000002955120" target="_blank" rel="external">https://segmentfault.com/a/1190000002955120</a></p>
+</li>
+</ol>
+
+    
+  </div>
+</article>
+
+</div>
+
+
+  <div class="text-center donation">
+    <div class="inner-donation">
+      <span class="btn-donation">支持一下</span>
+      <div class="donation-body">
+        <div class="tip text-center">扫一扫，支持forsigner</div>
+        <ul class="theme.donation.items.length">
+        
+          <li class="item">
+            <img src="/images/qr-wechat.png" alt="">
+          </li>
+        
+          <li class="item">
+            <img src="/images/qr-alipay.png" alt="">
+          </li>
+        
+        </ul>
       </div>
     </div>
   </div>
 
-</div>
 
-
-  <div class="post-list-box archive-body">
-    <ul class="list-post">  <li class="item-year item item-title item-title-1">
-    <a href="/archives/2016" class="text-year">
-      2016
-      <i class="icon-hou"></i>
-      
-    </a>
-  </li>
-<li class="item-post item">
-  <span class="post-date">12-24</span>
-
-  
-  <a class="post-title" href="/2016/12/24/Vue入门/">Vue入门</a>
-
-
-</li>
-<li class="item-post item">
-  <span class="post-date">12-14</span>
-
-  
-  <a class="post-title" href="/2016/12/14/Ubuntu下的项目部署/">Ubuntu下的项目部署</a>
-
-
-</li>
-<li class="item-post item">
-  <span class="post-date">12-11</span>
-
-  
-  <a class="post-title" href="/2016/12/11/git指南/">git指南</a>
-
-
-</li>
-<li class="item-post item">
-  <span class="post-date">12-01</span>
-
-  
-  <a class="post-title" href="/2016/12/01/高难度对话/">高难度对话</a>
-
-
-</li>
-<li class="item-post item">
-  <span class="post-date">12-01</span>
-
-  
-  <a class="post-title" href="/2016/12/01/踏实/">踏实</a>
-
-
-</li>
-<li class="item-post item">
-  <span class="post-date">11-12</span>
-
-  
-  <a class="post-title" href="/2016/11/12/Nodejs与npm/">Nodejs与npm</a>
-
-
-</li>
-<li class="item-post item">
-  <span class="post-date">11-08</span>
-
-  
-  <a class="post-title" href="/2016/11/08/西洋油画鉴赏/">西洋油画鉴赏</a>
-
-
-</li>
-<li class="item-post item">
-  <span class="post-date">11-03</span>
-
-  
-  <a class="post-title" href="/2016/11/03/CSS常见问题/">CSS常见问题</a>
-
-
-</li>
-<li class="item-post item">
-  <span class="post-date">11-02</span>
-
-  
-  <a class="post-title" href="/2016/11/02/入手Kindle/">入手Kindle</a>
-
-
-</li>
-<li class="item-post item">
-  <span class="post-date">11-02</span>
-
-  
-  <a class="post-title" href="/2016/11/02/如何进行博文写作/">如何进行博文写作</a>
-
-
-</li>
-</ul>
-  </div>
-
-  <div class="archive-footer">
-    
-  <div class="pagination">
-    <nav class="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/archives/2016/page/2/">2</a><a class="page-number" href="/archives/2016/page/3/">3</a><a class="extend next" rel="next" href="/archives/2016/page/2/"><i class="icon-angle-right"></i></a>
-    </nav>
-  </div>
-
-
-  </div>
-</div>
 
 
   <a id="backTop" class="back-top">
     <i class="icon-angle-up"></i>
   </a>
-
-
 
 
 
@@ -351,6 +302,40 @@
 </div>
 
 
+
+  
+      <div class="fexo-comments comments-post">
+    
+  <section class="disqus-comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+  </section>
+
+  <script>
+    var disqus_shortname = 'forsigner';
+    
+    var disqus_url = 'http://www.mybjut.cn/2016/12/14/Ubuntu下的项目部署/';
+    
+    (function(){
+      var dsq = document.createElement('script');
+      dsq.type = 'text/javascript';
+      dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+
+  <script id="dsq-count-scr" src="//forsigner.disqus.com/count.js" async></script>
+
+
+
+    
+
+
+
+
+  </div>
 
   
 
